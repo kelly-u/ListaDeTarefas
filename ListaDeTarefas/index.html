@@ -27,22 +27,22 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<ul>
-					<li><a href=”#”>Link1</a></li>
-					<li><a href=”#”>Link2</a></li>
-					<li><a href=”#”>Link3</a></li>
-					<li><a href=”#”>Link4</a></li>
+				<ul class="ulMenu">
+					<li><a href="#">Link1</a></li>
+					<li><a href="#">Link2</a></li>
+					<li><a href="#">Link3</a></li>
+					<li><a href="#">Link4</a></li>
 				</ul>
 			</section>
 			</div>
 
 			<div class="col-md-8" id="tab">
 				<section>
-					<h2 class="titulo">Lista de tarefas</h2>
+					<h1 class="titulo">Lista de tarefas</h1>
 
 					<div class="row">
 						<div class="col-md-5" id="tab2">
-							<h3 class="titulo">Dia</h3>
+							<h2 class="titulo">Dia</h2>
 
 							<div class="conteudo">
 						      <div class="topo">
@@ -51,16 +51,23 @@
 						          <i class="fa fa-plus"></i>
 						        </button>
 						      </div>
+
+							  <ul id="listaTarefas">
+						        <li>
+						          <span class="textoTarefa">Tarefa 1 Dia</span>
+						          <div>
+						            <button class="btnAcao">
+						              <i class="fa fa-trash"></i>
+						            </button>
+						          </div>
+						        </li>
+						      </ul>
+
 						    </div>
-
-							<ol>
-								<li>oi</li>
-							</ol>
-
 						</div>
 
 						<div class="col-md-5"id="tab2">
-							<h3 class="titulo">Noite</h3>
+							<h2 class="titulo">Noite</h2>
 
 							<div class="conteudo">
 						      <div class="topo">
@@ -69,11 +76,20 @@
 						          <i class="fa fa-plus"></i>
 						        </button>
 						      </div>
-						    </div>
 
-						    <ol>
-								<li>tchau</li>
-							</ol>
+
+						      <ul id="listaTarefas">
+						        <li>
+						          <span class="textoTarefa">Tarefa 1 noite</span>
+						          <div>
+						            <button class="btnAcao">
+						              <i class="fa fa-trash"></i>
+						            </button>
+						          </div>
+						        </li>
+						      </ul>
+
+						    </div>
 
 						</div>
 					</div>
