@@ -1,6 +1,7 @@
 body{
 	background-color: #ADD8E6;
 	padding: 30px;
+	font-size: 18px;
 }
 
 .foto-perfil{
@@ -31,7 +32,10 @@ a{
 
 #tab2{
 	background-color: #F0E68C;
-	margin: 35px;
+	border-radius: 12px;
+	justify-content: space-between;
+	align-items: center;
+	margin:10px;	
 }
 
 .titulo{
@@ -47,7 +51,7 @@ a{
 }
 
 .topo input{
-	width: 300px;
+	width: 280px;
 	padding: 10px;
 	border-radius: 12px;
 	border:1px solid #191818;
@@ -55,4 +59,46 @@ a{
 	font-size: 18px;
 	background: #FFFACD;
 	color: #4F4F4F;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topo button{
+	width: 45px;
+	border-radius: 12px;
+	border:1px solid #191818;
+	outline: none;
+	background-color: LightCyan;
+	cursor: pointer;
+}
+
+
+.topo button:hover{
+	background-color: #ADD8E6;
+}
+
+#listaTarefas{
+	pading: 0;
+	margin:0;
+}
+
+#listaTarefas li{
+	padding: 20px;
+	/*display: flex;*/
+	list-style-position: inside;
+	text-align: left;
+}
+
+.btnAcao{
+	width: 45px;
+	border-radius: 12px;
+	border:1px solid #191818;
+	outline: none;
+	background-color: LightCyan;
+	cursor: pointer;
+}
+
+.btnAcao:hover{
+	background-color: #ADD8E6;
 }
