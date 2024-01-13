@@ -2,6 +2,10 @@ let inputNovaTarefa = document.querySelector('#inputNovaTarefa');
 let btnAddTarefa = document.querySelector('#btnAddTarefa');
 let listaTarefas = document.querySelector('#listaTarefas');
 
+let inputNovaTarefa2 = document.querySelector('#inputNovaTarefa2');
+let btnAddTarefa2 = document.querySelector('#btnAddTarefa2');
+let listaTarefas2 = document.querySelector('#listaTarefas2');
+
 inputNovaTarefa.addEventListener('keypress', (e) => {
 
 	if(e.keyCode == 13){
@@ -14,6 +18,18 @@ inputNovaTarefa.addEventListener('keypress', (e) => {
 
 });
 
+inputNovaTarefa2.addEventListener('keypress', (e) => {
+
+	if(e.keyCode == 13){
+		let tarefa2 = {
+			nome: inputNovaTarefa2.value,
+			id:gerarId(),
+		}
+		adicionarTarefa2(tarefa2);
+	}
+
+});
+
 
 btnAddTarefa.addEventListener('click', (e) => {
 
@@ -22,6 +38,15 @@ btnAddTarefa.addEventListener('click', (e) => {
 		id: gerarId(),
 	}
 	adicionarTarefa(tarefa);
+});
+
+btnAddTarefa2.addEventListener('click', (e) => {
+
+	let tarefa2 = {
+		nome: inputNovaTarefa2.value,
+		id: gerarId(),
+	}
+	adicionarTarefa2(tarefa2);
 });
 
 
@@ -37,12 +62,40 @@ function adicionarTarefa(tarefa){
 	inputNovaTarefa.value = '';
 }
 
+
+function adicionarTarefa2(tarefa2){
+	let li = criarTagLI2(tarefa2);
+	listaTarefas2.appendChild(li);
+	inputNovaTarefa2.value = '';
+}
+
 function criarTagLI(tarefa){
 	let li = document.createElement('li');
 
 	let span = document.createElement('span');
 	span.classList.add('textoTarefa');
 	span.innerHTML = tarefa.nome;
+
+	let div = document.createElement('div');
+
+	let btnExcluir = document.createElement('button');
+	btnExcluir.classList.add('btnAcao');
+	btnExcluir.innerHTML = '<i class="fa fa-trash"></i>';
+
+	div.appendChild(btnExcluir);
+
+	li.appendChild(span);
+	li.appendChild(div);
+	return li;
+
+}
+
+function criarTagLI2(tarefa2){
+	let li = document.createElement('li');
+
+	let span = document.createElement('span');
+	span.classList.add('textoTarefa');
+	span.innerHTML = tarefa2.nome;
 
 	let div = document.createElement('div');
 
