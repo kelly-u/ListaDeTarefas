@@ -50,7 +50,7 @@ a{
 	border:1px solid #191818;
 	outline: none;
 	font-size: 18px;
-	background: #FFFACD;
+	background: Azure;
 	color: #4F4F4F;
 	display: flex;
 	justify-content: space-between;
@@ -77,10 +77,14 @@ a{
 }
 
 #listaTarefas li{
-	margin-top: 10px;
+	margin: 10px;
 	margin-bottom: 20px;
 	list-style-position: inside;
 	text-align: left;
+	position: relative;
+	left: -30px;
+	border-radius: 12px;
+	background: #FFFACD;
 }
 
 #listaTarefas2{
@@ -91,8 +95,13 @@ a{
 #listaTarefas2 li{
 	margin-top: 10px;
 	margin-bottom: 20px;
+	margin-left: 10px;
 	list-style-position: inside;
 	text-align: left;
+	position: relative;
+	left: -30px;
+	border-radius: 12px;
+	background: #FFFACD;
 }
 
 .btnAcao{
