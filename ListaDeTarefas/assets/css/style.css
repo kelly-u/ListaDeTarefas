@@ -1,0 +1,30 @@
+.foto-perfil{
+	border-radius: 100%;
+	max-width: 150px;
+	border: 1px solid black;
+
+}
+
+body{
+	background-color: #f7f7f7;
+	padding: 30px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+#tab{
+	background-color: #DCDCDC;
+	padding: 10px;
+}
+
+#tab2{
+	background-color: white;
+	margin: 35px;
+}
+
+.titulo{
+	margin-top:30px;
+	margin-bottom: 30px;
+}
