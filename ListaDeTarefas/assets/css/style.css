@@ -8,17 +8,10 @@ body{
 	border-radius: 100%;
 	max-width: 150px;
 	border: 1px solid #4682B4;
-
 }
 
 a{
 	text-decoration: none;
-}
-
-#listaTarefas{
-	margin-left: 15px;
-	align-content: left;
-
 }
 
 .ulMenu{
@@ -79,13 +72,25 @@ a{
 }
 
 #listaTarefas{
+	pading:0px;
+	margin:0px;
+}
+
+#listaTarefas li{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	list-style-position: inside;
+	text-align: left;
+}
+
+#listaTarefas2{
 	pading: 0;
 	margin:0;
 }
 
-#listaTarefas li{
-	padding: 20px;
-	/*display: flex;*/
+#listaTarefas2 li{
+	margin-top: 10px;
+	margin-bottom: 20px;
 	list-style-position: inside;
 	text-align: left;
 }
