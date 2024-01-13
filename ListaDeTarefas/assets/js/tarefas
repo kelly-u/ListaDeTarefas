@@ -83,6 +83,7 @@ function adicionarTarefa2(tarefa2){
 
 function criarTagLI(tarefa){
 	let li = document.createElement('li');
+	li.id = tarefa.id;
 
 	let span = document.createElement('span');
 	span.classList.add('textoTarefa');
@@ -105,6 +106,7 @@ function criarTagLI(tarefa){
 
 function criarTagLI2(tarefa2){
 	let li = document.createElement('li');
+	li.id = tarefa2.id;
 
 	let span = document.createElement('span');
 	span.classList.add('textoTarefa');
@@ -115,7 +117,7 @@ function criarTagLI2(tarefa2){
 	let btnExcluir = document.createElement('button');
 	btnExcluir.classList.add('btnAcao');
 	btnExcluir.innerHTML = '<i class="fa fa-trash"></i>';
-	btnExcluir.setAttribute('onclick', 'excluir('+tarefa2.id+')');
+	btnExcluir.setAttribute('onclick', 'excluir2('+tarefa2.id+')');
 
 
 	div.appendChild(btnExcluir);
@@ -127,5 +129,21 @@ function criarTagLI2(tarefa2){
 }
 
 function excluir(idTarefa){
-	alert(idTarefa);
+	let confirmacao = window.confirm('Tem certeza que deseja excluir essa tarefa?');
+	if(confirmacao){
+		let li = document.getElementById(''+idTarefa+'');
+		if(li){
+			listaTarefas.removeChild(li);
+		}
+	}
+}
+
+function excluir2(idTarefa2){
+	let confirmacao = window.confirm('Tem certeza que deseja excluir essa tarefa?');
+	if(confirmacao){
+		let li = document.getElementById(''+idTarefa2+'');
+		if(li){
+			listaTarefas2.removeChild(li);
+		}
+	}
 }
