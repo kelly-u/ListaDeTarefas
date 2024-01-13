@@ -57,16 +57,28 @@ function gerarId(){
 
 
 function adicionarTarefa(tarefa){
-	let li = criarTagLI(tarefa);
-	listaTarefas.appendChild(li);
-	inputNovaTarefa.value = '';
-}
+	if(inputNovaTarefa.value==""||inputNovaTarefa.value==" "){
+		alert('Adicione uma tarefa!');
+	}
+
+	else{
+		let li = criarTagLI(tarefa);
+		listaTarefas.appendChild(li);
+		inputNovaTarefa.value = '';
+	}
+}	
 
 
 function adicionarTarefa2(tarefa2){
-	let li = criarTagLI2(tarefa2);
-	listaTarefas2.appendChild(li);
-	inputNovaTarefa2.value = '';
+	if(inputNovaTarefa2.value==""||inputNovaTarefa.value==" "){
+		alert('Adicione uma tarefa!');
+	}
+
+	else{
+		let li = criarTagLI2(tarefa2);
+		listaTarefas2.appendChild(li);
+		inputNovaTarefa2.value = '';
+	}	
 }
 
 function criarTagLI(tarefa){
