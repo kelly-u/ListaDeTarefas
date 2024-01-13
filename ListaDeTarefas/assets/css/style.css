@@ -1,30 +1,58 @@
-.foto-perfil{
-	border-radius: 100%;
-	max-width: 150px;
-	border: 1px solid black;
-
-}
-
 body{
-	background-color: #f7f7f7;
+	background-color: #ADD8E6;
 	padding: 30px;
 }
 
-ul{
+.foto-perfil{
+	border-radius: 100%;
+	max-width: 150px;
+	border: 1px solid #4682B4;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+#listaTarefas{
+	margin-left: 15px;
+	align-content: left;
+
+}
+
+.ulMenu{
 	list-style-type: none;
 }
 
 #tab{
-	background-color: #DCDCDC;
+	background-color: #6495ED;
 	padding: 10px;
 }
 
 #tab2{
-	background-color: white;
+	background-color: #F0E68C;
 	margin: 35px;
 }
 
 .titulo{
 	margin-top:30px;
 	margin-bottom: 30px;
+	color:#191970;
+}
+
+.topo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.topo input{
+	width: 300px;
+	padding: 10px;
+	border-radius: 12px;
+	border:1px solid #191818;
+	outline: none;
+	font-size: 18px;
+	background: #FFFACD;
+	color: #4F4F4F;
 }
