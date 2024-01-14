@@ -24,11 +24,13 @@ a{
 }
 
 #tab2{
+	width: 42%;
+	right: 42%;
 	background-color: #F0E68C;
 	border-radius: 12px;
 	justify-content: space-between;
 	align-items: center;
-	margin:10px;	
+	margin:4%;	
 }
 
 .titulo{
@@ -40,12 +42,13 @@ a{
 .topo{
   display: flex;
   justify-content: space-between;
+  margin: 5%;
   margin-bottom: 20px;
 }
 
 .topo input{
-	width: 280px;
-	padding: 10px;
+	width: 80%;
+	padding: 5%;
 	border-radius: 12px;
 	border:1px solid #191818;
 	outline: none;
