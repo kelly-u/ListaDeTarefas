@@ -36,7 +36,7 @@ btnAddTarefa.addEventListener('click', (e) => {
 
 
 function adicionarTarefa(tarefa){
-	if(inputNovaTarefa.value==""||inputNovaTarefa.value==" "){
+	if(inputNovaTarefa.value==''||inputNovaTarefa.value==' '){
 		alert('Adicione uma tarefa!');
 	}
 
@@ -131,7 +131,7 @@ btnAddTarefa2.addEventListener('click', (e) => {
 
 
 function adicionarTarefa2(tarefa2){
-	if(inputNovaTarefa2.value==""||inputNovaTarefa.value==" "){
+	if(inputNovaTarefa2.value==''||inputNovaTarefa.value==' '){
 		alert('Adicione uma tarefa!');
 	}
 
@@ -139,8 +139,8 @@ function adicionarTarefa2(tarefa2){
 		let li = criarTagLI2(tarefa2);
 		listaTarefas2.appendChild(li);
 		inputNovaTarefa2.value = '';
-	}	
-}
+	}
+}	
 
 
 
