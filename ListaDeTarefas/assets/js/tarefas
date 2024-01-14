@@ -6,6 +6,11 @@ let inputNovaTarefa2 = document.querySelector('#inputNovaTarefa2');
 let btnAddTarefa2 = document.querySelector('#btnAddTarefa2');
 let listaTarefas2 = document.querySelector('#listaTarefas2');
 
+
+/*
+Tarefas do dia:
+*/
+
 inputNovaTarefa.addEventListener('keypress', (e) => {
 
 	if(e.keyCode == 13){
@@ -15,20 +20,8 @@ inputNovaTarefa.addEventListener('keypress', (e) => {
 		}
 		adicionarTarefa(tarefa);
 	}
-
 });
 
-inputNovaTarefa2.addEventListener('keypress', (e) => {
-
-	if(e.keyCode == 13){
-		let tarefa2 = {
-			nome: inputNovaTarefa2.value,
-			id:gerarId(),
-		}
-		adicionarTarefa2(tarefa2);
-	}
-
-});
 
 
 btnAddTarefa.addEventListener('click', (e) => {
@@ -40,20 +33,6 @@ btnAddTarefa.addEventListener('click', (e) => {
 	adicionarTarefa(tarefa);
 });
 
-btnAddTarefa2.addEventListener('click', (e) => {
-
-	let tarefa2 = {
-		nome: inputNovaTarefa2.value,
-		id: gerarId(),
-	}
-	adicionarTarefa2(tarefa2);
-});
-
-
-
-function gerarId(){
-	return Math.floor(Math.random() * 3000);
-}
 
 
 function adicionarTarefa(tarefa){
@@ -69,17 +48,6 @@ function adicionarTarefa(tarefa){
 }	
 
 
-function adicionarTarefa2(tarefa2){
-	if(inputNovaTarefa2.value==""||inputNovaTarefa.value==" "){
-		alert('Adicione uma tarefa!');
-	}
-
-	else{
-		let li = criarTagLI2(tarefa2);
-		listaTarefas2.appendChild(li);
-		inputNovaTarefa2.value = '';
-	}	
-}
 
 function criarTagLI(tarefa){
 	let li = document.createElement('li');
@@ -104,6 +72,78 @@ function criarTagLI(tarefa){
 
 }
 
+
+
+function excluir(idTarefa){
+	let confirmacao = window.confirm('Tem certeza que deseja excluir essa tarefa?');
+	if(confirmacao){
+		let li = document.getElementById(''+idTarefa+'');
+		if(li){
+			listaTarefas.removeChild(li);
+		}
+	}
+}
+
+
+
+
+
+
+/*
+Dia e noite:
+*/
+function gerarId(){
+	return Math.floor(Math.random() * 3000);
+}
+
+
+
+
+
+
+/*
+Tarefas da noite
+*/
+
+inputNovaTarefa2.addEventListener('keypress', (e) => {
+
+	if(e.keyCode == 13){
+		let tarefa2 = {
+			nome: inputNovaTarefa2.value,
+			id:gerarId(),
+		}
+		adicionarTarefa2(tarefa2);
+	}
+
+});
+
+
+
+btnAddTarefa2.addEventListener('click', (e) => {
+
+	let tarefa2 = {
+		nome: inputNovaTarefa2.value,
+		id: gerarId(),
+	}
+	adicionarTarefa2(tarefa2);
+});
+
+
+
+function adicionarTarefa2(tarefa2){
+	if(inputNovaTarefa2.value==""||inputNovaTarefa.value==" "){
+		alert('Adicione uma tarefa!');
+	}
+
+	else{
+		let li = criarTagLI2(tarefa2);
+		listaTarefas2.appendChild(li);
+		inputNovaTarefa2.value = '';
+	}	
+}
+
+
+
 function criarTagLI2(tarefa2){
 	let li = document.createElement('li');
 	li.id = tarefa2.id;
@@ -119,7 +159,6 @@ function criarTagLI2(tarefa2){
 	btnExcluir.innerHTML = '<i class="fa fa-trash"></i>';
 	btnExcluir.setAttribute('onclick', 'excluir2('+tarefa2.id+')');
 
-
 	div.appendChild(btnExcluir);
 
 	li.appendChild(span);
@@ -128,15 +167,7 @@ function criarTagLI2(tarefa2){
 
 }
 
-function excluir(idTarefa){
-	let confirmacao = window.confirm('Tem certeza que deseja excluir essa tarefa?');
-	if(confirmacao){
-		let li = document.getElementById(''+idTarefa+'');
-		if(li){
-			listaTarefas.removeChild(li);
-		}
-	}
-}
+
 
 function excluir2(idTarefa2){
 	let confirmacao = window.confirm('Tem certeza que deseja excluir essa tarefa?');
