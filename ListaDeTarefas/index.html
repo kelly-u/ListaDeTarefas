@@ -1,248 +1,85 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="Gleice Kelly" />
-        <title>Currículo Gleice Kelly Macêdo</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="pt-br">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Tarefas</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4">
+			<section>
+				
+				<img class="foto-perfil" src="assets/img/perfil-usuario-comum.png">
 
-    </head>
+				<h1 class="titulo">Gleice Kelly Macêdo</h1>
 
-    <body id="page-top">
-        <!-- Navegação-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Gleice Kelly</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpeg" alt="Foto de perfil de Gleice Kelly" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiencias">Experiências</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#educacao">Educação</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interesses">Interesses</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificados">Certificados</a></li>
-                </ul>
-            </div>
-        </nav>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+				<ul class="ulMenu">
+					<li><a href="#">Link1</a></li>
+					<li><a href="#">Link2</a></li>
+					<li><a href="#">Link3</a></li>
+					<li><a href="#">Link4</a></li>
+				</ul>
+			</section>
+			</div>
 
+			<div class="col-md-8" id="tab">
+				<section>
+					<h1 class="titulo">Lista de tarefas</h1>
 
-        <!-- Conteúdo da Página -->
-        <div class="container-fluid p-0">
-            <!-- Sobre-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Gleice Kelly
-                        <span class="text-primary">Macêdo</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Terceira Travessa Garanhuns · Jaboatão dos Guararapes, PE · (81) 98155-5988 ·
-                        <a href="mailto:gleicekellymacedodd@gmail.com">gleicekellymacedodd@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">
-                        A tecnologia já está ligada ao nosso dia, está ao nosso redor, presente em toda parte. Se o própósito da internet é conectar usuários entre si, que possamos ir além e conectar pessoas a novos futuros! É disto que quero fazer parte.
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/gleice-kelly-mac%C3%AAdo-da-silva-0a065a197/"><i class="fab fa-linkedin-in"></i></a>
+					<div class="row">
+						<div class="col-md-5" id="tab2">
+							<h2 class="titulo">Dia</h2>
 
-                        <a class="social-icon" target="_blank" href="https://github.com/kelly-u"><i class="fab fa-github"></i></a>
+						      <div class="topo">
+						        <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
+						    
+						        <button id="btnAddTarefa">
+						          <i class="fa fa-plus"></i>
+						        </button>
+						    
+						      </div>
 
-                        <a class="social-icon" target="_blank" href="https://www.instagram.com/kellynha_u/"><i class="fab fa-instagram"></i></a>
+							  <ul id="listaTarefas">
+						      </ul>
 
-                        <a class="social-icon" target="_blank" href="https://www.facebook.com/kellynha.catedral/"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
+						</div>
 
+						<div class="col-md-5" id="tab2">
+							<h2 class="titulo">Noite</h2>
 
+						      <div class="topo">
+						        <input type="text" id="inputNovaTarefa2" placeholder="Adicione uma nova tarefa">
+						        
+						        <button id="btnAddTarefa2"> 
+						          <i class="fa fa-plus"></i>
+						        </button>
 
-            <!-- Experiências-->
-            <section class="resume-section" id="experiencias">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-aos="fade-up">Experiências</h2>
+						      </div>
 
+							  <ul id="listaTarefas2">
+						      </ul>
 
+						</div>
+					</div>
 
-                    <div data-aos="fade-right" class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Lista de Tarefas</h3>
-                            <div class="subheading mb-3">
-                                <a href="https://github.com/kelly-u/ListaDeTarefas" target="_blank">
-                                    Projeto no GitHub
-                                </a>
-                            </div>
-                            <p>Projeto simples desenvolvido com as tecnologias HTML, CSS, Java Script e Framework Bootstrap. Neste, é possível adicionar e remover tarefas na coluna dia ou noite de forma dinâmica.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Janeiro 2024</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-
-            <!-- Educação-->
-            <section class="resume-section" id="educacao">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-aos="fade-up">Educação</h2>
-
-
-                    <div data-aos="fade-right" class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">IFPE - Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco, Campus Jaboatão dos Guararapes</h3>
-                            <div class="subheading mb-3">Técnico em Informática para Internet</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Abril 2017 - Setembro 2018</span></div>
-                    </div>
-                    <br>
-                    <br>
-
-                    <div data-aos="fade-right" class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">UPInfor, Jaboatão dos Guararapes</h3>
-                            <div class="subheading mb-3">Informática Básica</div>
-                                Pacote Office nível básico:
-                                <ul>
-                                    <li>Word</li>
-                                    <li>Excel</li>
-                                    <li>Power Point</li>
-                                </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018 - 2019</span></div>
-                    </div>
-
-
-                    <div data-aos="fade-right" class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">IFPE - Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco, Campus Recife</h3>
-                            <div class="subheading mb-3">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Março 2019 - Expectativa de término Julho 2024</span></div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-            </div>
-            </section>
-            <hr class="m-0" />
-
-
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-aos="fade-up">Skills</h2>
-                    <div data-aos="fade-right" class="subheading mb-3">Programação Linguagens & Ferramentas</div>
-                    <ul data-aos="fade-right" class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <!--
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    -->
-                    </ul>
-                    <div data-aos="fade-right" class="subheading mb-3">Trabalho</div>
-                    <ul data-aos="fade-right" class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Construção de Aplicações Web
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Construção de Aplicações Responsivas
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Framework - Bootstrap
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Metodologia Ágil - Scrum
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Controle de Versão - Git
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-
-            <!-- Interesses-->
-            <section class="resume-section" id="interesses">
-                <div data-aos="fade-right" class="resume-section-content">
-                    <h2 class="mb-5"data-aos="fade-up">interesses</h2>
-                    <p data-aos="fade-right">
-                    Além de ser uma desenvolvedora apaixonada pela área de dados, também sou uma artesã.
-                    Sempre gostei muito de estudar e por isso sempre recebia o apelido de Nerd. Então, decidi ser micro-empreendedora com artigos de crochê voltados para este mundo Nerd/Geek: o <a target="_blank" href="https://www.instagram.com/mundonerdoco/"> Mundo Nerdoco</a>.
-                    </p>
-
-                    <p  data-aos="fade-right"class="mb-0">Gosto sempre de fazer um curso, aprender algo novo, me envolver um novo projeto! A novidade me motiva, gosto de iniciar e terminar atividades. Me sinto bem vendo o trabalho final de todo o meu esforço e o quanto ele impactou na vida das pessoas. Gosto e preciso ver significado em tudo o que eu faço!</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-            <!-- Certificados-->
-            <section class="resume-section" id="certificados">
-                <div data-aos="fade-right" class="resume-section-content">
-                    <h2 class="mb-5" data-aos="fade-up">Certificados</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li">
-                                <i class="fas fa-trophy text-warning"></i>
-                            </span>
-                            <a href="#">Curso de HTML Prático - Construindo seu currículo na Web</a>
-                        </li>
-                        <li>
-                            <span class="fa-li">
-                                <i class="fas fa-trophy text-warning"></i>
-                            </span>
-                            <a target="_blank" href="https://www.coursera.org/professional-certificates/analise-de-dados-do-google">Coursera em parceria com o Google - Certificado Profissional Google Data Analytics (Em Andamento)</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-           
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/tarefas.js"></script>
+</body>
 </html>
